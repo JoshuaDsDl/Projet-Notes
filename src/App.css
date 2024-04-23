@@ -1,0 +1,91 @@
+.theme-switch-wrapper {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.night-mode {
+  background-color: #aaaaaa; 
+  color: #fff;
+}
+
+.Side {
+  position: fixed;
+  width: 240px;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  background-color: rgb(29, 35, 39);
+  display: flex;
+  flex-direction: column;
+}
+
+.Search-input {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: none;
+  background-color: rgb(44, 51, 56);
+  color: white;
+  margin-bottom: 12px; /* Espace après la liste des notes */
+  margin-top: 12px; /* Espace avant la liste des notes */
+}
+
+.Main {
+  height: 100vh;
+  margin-left: 240px; /* Assure un démarrage propre à côté de la barre latérale */
+}
+
+.Loading-wrapper,
+.Create-note-wrapper {
+  padding: 12px;
+}
+
+.Note-button {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  border: none;
+  background: none;
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.Note-button-selected {
+  background: rgb(44, 51, 56);
+}
+
+.Note-button:hover {
+  background: rgb(60, 60, 60);
+}
+
+.Pin-button {
+  margin-bottom: 20px; /* Espace entre chaque boutons de note */
+  margin-left: 10px;
+  background: none;
+  border: none;
+}
+
+.Delete-button {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+.Check-button {
+  margin-left: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.is-checked {
+  color: green;
+}

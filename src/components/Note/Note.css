@@ -1,0 +1,39 @@
+.Form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.Note-editable {
+  width: 100%;
+  border: none;
+  padding: 16px;
+  background: transparent;
+  color: inherit;
+}
+
+.Note-editable:focus-visible {
+  outline: 0;
+  box-shadow: inset 0px 0px 0px 2px white;
+}
+
+.Note-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.Note-content {
+  flex-grow: 1;
+  resize: none;
+  font-family: inherit;
+}
+
+.Note-actions {
+  font-size: 14px;
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}

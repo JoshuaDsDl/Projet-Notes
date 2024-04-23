@@ -1,0 +1,20 @@
+.Button {
+  padding: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid white;
+  background: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+.Button:hover {
+  background: rgb(60, 60, 60);
+}
+
+.Button.disabled {
+  opacity: 0.1; /* Diminuer l'opacité du bouton lorsqu'il est désactivé */
+  cursor: not-allowed; /* Changer le curseur lorsque le bouton est désactivé */
+  background: red;
+}
